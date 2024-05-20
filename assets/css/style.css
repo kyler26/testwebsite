@@ -1,12 +1,21 @@
-    
+             
+      @font-face {
+        font-family: 'Raleway';
+        src: url('../dynamic/fonts/raleway/raleway.woff2') format('woff2 supports variations'),
+        url('../dynamic/fonts/raleway/raleway.woff2') format('woff2-variations');
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: normal;
+      }
+        
     :root {
       --page-margin:        6vw;
       --entry-width:        42rem; 
       --navbar-height:      4.4rem; 
       --border-radius:      6px;
       --gallery-gap:        0.28333rem; 
-      --body-font:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      --heading-font:       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      --body-font:          'Raleway', sans-serif;
+      --heading-font:       'Raleway', sans-serif;
       --logo-font:          var(--body-font);
       --menu-font:          var(--body-font);
       --font-weight-normal: 400; 
@@ -33,7 +42,7 @@
         --section-bg:         #17181E;
         --color:              #AC2B37;   
         --color-rgb:          172, 43, 55;
-        --text-color:         #17181E; 
+        --text-color:         #000000; 
         --headings-color:     #FFFFFF;
         --link-color:         #FFFFFF;
         --link-color-hover:   #AC2B37;    
@@ -2275,7 +2284,8 @@ textarea {
     align-items: center; }
 .divider-custom .divider-custom-line {
     width: 100%;
-    max-width: 7rem;
+    max-width: 5rem;
+    max-height: 0.25rem;
     height: 0.25rem;
     background-color: #000000;
     border-radius: 1rem;
@@ -2286,8 +2296,12 @@ textarea {
     margin-left: 1rem; }
 .divider-custom .divider-custom-icon {
     color: #000000 !important;
+    width: 4%;
     font-size: 2rem; }
 .divider-custom.divider-light .divider-custom-line {
     background-color: #fff; }
 .divider-custom.divider-light .divider-custom-icon {
     color: #fff !important; }
+.divider-custom .divider-custom-image {
+    height: 50;
+}
