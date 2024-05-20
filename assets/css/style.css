@@ -2296,12 +2296,15 @@ textarea {
     margin-left: 1rem; }
 .divider-custom .divider-custom-icon {
     color: #000000 !important;
-    width: 4%;
-    font-size: 2rem; }
+    font-size: 2rem;
+	align-items: center;
+    width: 6%;
+	display: flex;}
 .divider-custom.divider-light .divider-custom-line {
     background-color: #fff; }
 .divider-custom.divider-light .divider-custom-icon {
     color: #fff !important; }
 .divider-custom .divider-custom-image {
-    height: 50;
+    height: 5%;
+    align-items: center;
 }
