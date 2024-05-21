@@ -2344,7 +2344,7 @@ table th {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   table {
     border: 0;
   }
