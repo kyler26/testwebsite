@@ -1,0 +1,35 @@
+<!-- ALERT AT TOP OF THE WEBSITE (uncomment if needed, it messes with the navbar placement)-->
+
+<!--
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <b></b> We are joining NIRCA in the fall! This allows us to attend both XC and track meets!
+</div>
+
+<style>
+   /* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #b3b3b3; /* Grey */
+  color: white; /*Text Color */
+  margin-bottom: 0px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+} 
+</style>
+-->
