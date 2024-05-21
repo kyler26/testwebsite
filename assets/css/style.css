@@ -2273,7 +2273,7 @@ textarea {
                opacity: 1;
                transition: opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1); 
          }/*
- * Put your custom CSS code here
+ * Custom CSS for running icon decoration
  */
 
 .divider-custom {
@@ -2344,7 +2344,7 @@ table th {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   table {
     border: 0;
   }
