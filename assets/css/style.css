@@ -2392,3 +2392,15 @@ table th {
     border-bottom: 0;
   }
 }
+
+/* Custom CSS for the contact page responsive wrapping */
+.containerWrap {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+        
+}
+.conDiv {
+	padding: 10px;
+    text-align: center;
+}
