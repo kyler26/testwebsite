@@ -1,0 +1,15 @@
+before_script:
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+
+deploy1:
+  stage: deploy
+  tags:
+    - student
+    - faculty
+    - hw-assignment
+  script:
+    - echo "Deploying website for $USERNAME to $WEBDIR"
+    - scp -pr -o StrictHostKeyChecking=no * "$USERNAME"@"$SSH_HOST":/isilon/home/"$USERNAME"/"$WEBDIR"/
+    - ssh -o StrictHostKeyChecking=no "$USERNAME"@"$SSH_HOST" "find /isilon/home/"$USERNAME"/"$WEBDIR"/ -type d -exec chmod 00701 '{}' \; "
+    - ssh -o StrictHostKeyChecking=no "$USERNAME"@"$SSH_HOST" "find /isilon/home/"$USERNAME"/"$WEBDIR"/ -type f -exec chmod 00604 '{}' \; "
